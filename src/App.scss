@@ -1,0 +1,340 @@
+$body: #0f0f0f;
+$darkColor: #1e1b1e;
+$lightColor: #fdfdfd;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $body;
+  color: $lightColor;
+  font-family: "Poppins", sans-serif;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+div {
+  border-radius: 25px;
+}
+
+button {
+  border-radius: 25px;
+  outline: none;
+  border: none;
+}
+
+.root {
+  padding: 25px 0;
+}
+
+#mainPage {
+  ul {
+    margin: 0 auto;
+    margin-bottom: 15px;
+    background-color: $darkColor;
+    border-radius: 25px;
+    li {
+      display: inline-block;
+      list-style: none;
+      margin: 7px;
+      a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+          width: 45px;
+        }
+      }
+    }
+  }
+  .col-2 {
+    flex-basis: 49%;
+    .box {
+      padding: 25px;
+      background-color: $darkColor;
+      margin-bottom: 15px;
+      .mainText {
+        font-size: 45px;
+        margin-bottom: 15px;
+        span {
+          &:nth-child(1) {
+            color: #00c39a;
+          }
+          &:nth-child(2) {
+            color: #ffc03c;
+          }
+          &:nth-child(3) {
+            color: #fe6d79;
+          }
+        }
+      }
+      .hireMeButton {
+        background-color: #7c23f0;
+        color: $lightColor;
+        padding: 10px 25px;
+        font-size: 18px;
+        font-weight: 700;
+        border-radius: 25px;
+        cursor: pointer;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          background-color: lighten($color: #7c23f0, $amount: 5);
+          transition: all 0.3s ease-in-out;
+        }
+      }
+    }
+    .miniBox {
+      flex-basis: 32%;
+      padding: 40px 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      p {
+        font-size: 14px;
+      }
+      h2 {
+        font-size: 50px;
+      }
+      &:nth-child(1) {
+        background-color: #00c39a;
+        &:hover {
+          transform: scale(1.05);
+          transition: all 0.3s ease-in-out;
+        }
+      }
+      &:nth-child(2) {
+        background-color: #ffc03c;
+        &:hover {
+          transform: scale(1.05);
+          transition: all 0.3s ease-in-out;
+        }
+        color: $darkColor;
+      }
+      &:nth-child(3) {
+        background-color: #fe6d79;
+        &:hover {
+          transform: scale(1.05);
+          transition: all 0.3s ease-in-out;
+        }
+      }
+    }
+    .nameBox {
+      padding: 15px 25px;
+      background-color: $darkColor;
+      margin-bottom: 10px;
+      h4 {
+        font-size: 16px;
+        letter-spacing: 1px;
+      }
+    }
+    .descBox {
+      padding: 25px;
+      background-color: $darkColor;
+      .row {
+        margin-bottom: 5px;
+      }
+      h4 {
+        font-size: 24px;
+        letter-spacing: 1px;
+      }
+      .resumeText {
+        font-size: 18px;
+      }
+      .aboutText {
+        font-size: 14px;
+      }
+    }
+  }
+  .myProjects {
+    text-align: center;
+    margin: 50px 0;
+  }
+  .col-3 {
+    flex-basis: 49%;
+    height: 400px;
+    background-color: $darkColor;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.5s ease-in-out;
+    &:hover {
+      transform: scale(1.05);
+      transition: all 0.5s ease-in-out;
+    }
+    h2 {
+      font-weight: normal;
+      font-size: 45px;
+      color: $lightColor;
+    }
+    &:nth-child(1) {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.8) 50%,
+          rgba(0, 0, 0, 0.8) 50%
+        ),
+        url("images/mobile.png");
+    }
+    &:nth-child(2) {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.8) 50%,
+          rgba(0, 0, 0, 0.8) 50%
+        ),
+        url("images/website.jpg");
+    }
+  }
+}
+
+#mobile,
+#website {
+  .col-3 {
+    flex-basis: 31%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    color: $lightColor;
+    padding: 15px;
+    border-radius: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+    &:hover {
+      transform: scale(1.03);
+      .hoverDiv {
+        transform: translateY(0);
+        transition: all 0.5s ease-in-out;
+      }
+      transition: all 0.5s ease-in-out;
+    }
+    .hoverDiv {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform: translateY(100%);
+      background: linear-gradient(
+        rgba(0, 0, 0, 0.9) 50%,
+        rgba(0, 0, 0, 0.9) 50%
+      );
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 25px;
+      color: $lightColor;
+      transition: all 0.5s ease-in-out;
+      p {
+        margin-bottom: 15px;
+      }
+      button {
+        padding: 10px 30px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+#mobile {
+  .col-3 {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.8) 50%,
+        rgba(0, 0, 0, 0.8) 50%
+      ),
+      url("images/mobile.png");
+  }
+}
+#website {
+  .col-3 {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.8) 50%,
+        rgba(0, 0, 0, 0.8) 50%
+      ),
+      url("images/website.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  #mainPage {
+    .col-2 {
+      flex-basis: 100%;
+      &:nth-child(1) {
+        margin-bottom: 15px;
+      }
+    }
+    .myProjects {
+      margin: 20px 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #mobile,
+  #website {
+    .col-3 {
+      flex-basis: 49%;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #mainPage {
+    .col-2 {
+      .miniBox {
+        flex-basis: 100%;
+        margin-bottom: 15px;
+        &:nth-child(3) {
+          margin-bottom: 0;
+        }
+      }
+      .nameBox {
+        flex-direction: column;
+      }
+    }
+    .myProjects {
+      margin: 15px 0;
+    }
+    .col-3 {
+      flex-basis: 100%;
+      margin-bottom: 15px;
+      height: 250px;
+    }
+  }
+  #mobile,
+  #website {
+    .col-3 {
+      flex-basis: 100%;
+      height: 250px;
+    }
+  }
+}
