@@ -27,11 +27,11 @@ const MainPage = () => {
                 <p>Years Experience</p>
               </div>
               <div className="miniBox">
-                <h2>54+</h2>
+                <h2>5+</h2>
                 <p>Handle Project</p>
               </div>
               <div className="miniBox">
-                <h2>40+</h2>
+                <h2>3+</h2>
                 <p>Clients</p>
               </div>
             </div>
@@ -56,7 +56,7 @@ const MainPage = () => {
                 <br />
                 <br />
                 Front End - Layout of adaptive and cross-browser sites of
-                varying complexity using HTML5, CSS3, jQuery and
+                varying complexity using HTML5, CSS3 and
                 Javascript.Developed the client side of new products (React
                 JS).Refactoring existing code. Collaborated with designers and
                 developers.
