@@ -6,6 +6,12 @@ const Mobile = () => {
       "Flutter E-Commerce Project. In This Project I've Used BLoC for StateManagment",
     ]
   ];
+  React.useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <div className="container">
       <div id="mobile" className="row">

@@ -21,6 +21,12 @@ const Website = () => {
       "To Do App in React. Not responsive (Only For PC)",
   ],
   ];
+  React.useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <div className="container">
       <div id="website" className="row">
