@@ -74,7 +74,7 @@ const MainPage = () => {
             </div>
           </div>
         </div>
-        <h1 className="myProjects">My Projects</h1>
+        {/* <h1 className="myProjects">My Projects</h1>
         <div className="row">
           <Link to="/Mobile" className="col-3">
             <h2>Mobile</h2>
@@ -82,7 +82,7 @@ const MainPage = () => {
           <Link to="/Website" className="col-3">
             <h2>Website</h2>
           </Link>
-        </div>
+        </div> */}
       </div>
     </div>
   );
